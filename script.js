@@ -95,10 +95,29 @@ cont.forEach((item)=>{
     observercont.observe(item)
 })
 
+// const menu = document.getElementById("menu");
+// const navlinks = document.querySelector(".navlinks");
+
+// menu.addEventListener("click", function () {
+//     navlinks.classList.toggle("active");
+// });
+
+// document.querySelectorAll(".navlinks a").forEach(link => {
+//     link.addEventListener("click", function () {
+//         navlinks.classList.remove("active");
+//     });
+// });
+
+console.log("SCRIPT LOADED");
+
 const menu = document.getElementById("menu");
 const navlinks = document.querySelector(".navlinks");
 
+console.log("MENU:", menu);
+console.log("NAVLINKS:", navlinks);
+
 menu.addEventListener("click", function () {
+    console.log("HAMBURGER CLICKED");
     navlinks.classList.toggle("active");
 });
 

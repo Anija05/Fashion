@@ -1180,7 +1180,7 @@ body {
     padding: 0;
     width: 100%;
 }
-    nav { 
+    /* nav { 
     height: 70px; 
     padding: 0 20px; 
     position: sticky;
@@ -1225,8 +1225,44 @@ body {
         width: 100%;
         text-align: center;
         padding: 15px 0;
+    } */
+    nav {
+        height: 70px;
+        padding: 0 20px;
+        position: sticky;
+        top: 0;
+        z-index: 2000;
+        box-sizing: border-box;
     }
-    
+
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navlinks {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 70%;
+        background-color: #cfbd99c5;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+        z-index: 3000;
+    }
+
+    .navlinks.active {
+        display: flex;
+    }
+
+    .navlinks a {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
     
     .hero {
         min-height: 650px;
